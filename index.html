@@ -14,15 +14,18 @@
 
     <!-- #01. Header / Navigation bar -->
 
-    <header>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>.</li>
-                <li>
+    <header class="header-container">
+        <nav class="nav-list">
+            <ul class="left-half">
+                <li class="lists"><a href="#">About</a></li>
+                <li class="lists"><a href="#">Store</a></li>
+    
+                <li class="right-half lists"><a href="#">Gmail</a></li>
+                <li class="lists"><a href="#">Images</a></li>
+                <li class="dot-box">
+                    <a href="#"><img class="dots" src="/images/menu.png" alt="menu"></a>
+                </li>
+                <li class="sign-in-btn">
                     <a href="#" id="sign-in-button">Sign In</a>
                 </li>
             </ul>
@@ -31,25 +34,26 @@
 
     <!-- #02. Title / Search Bar -->
 
-    <section>
-        <h1>Google</h1>
+    <section class="main-container">
+        <h1 class="google-logo-header">Google</h1>
+        <img src="/images/google-logo.svg" alt="google-logo" id="google-logo">
         <form action="/action_page.php">
             <input type="text" name="search">
         </form>
-        <img src="" alt="microphone">
+        <img src="/images/google-mic.png" id="google-mic" alt="microphone">
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
     </section>
 
     <!-- #03. Footer -->
 
-    <footer>
-        <ul>
-            <li>Advertising</li>
-            <li>Business</li>
-            <li>Privacy</li>
-            <li>Terms</li>
-            <li>Settings</li>
+    <footer class="footer-container">
+        <ul class="footer-list">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
         </ul>
     </footer>
 
