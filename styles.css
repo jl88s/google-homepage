@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,10 +9,6 @@ body {
     font-size: 13px;
     height: 100vh;
 }
-
-/* .header-container {
-    position: fixed;
-} */
 
 li {
     list-style-type: none;
@@ -88,17 +84,108 @@ li a:hover {
      text-decoration: none;
 }
 
+/* #02. Title / Search Bar */
 
-
-
-
-/*  misc add these later to where they belong */
-
-#google-mic {
-    height: 23px;
+.google-logo-header {
+    display: inline-block;
+    text-indent: -9999999px;
 }
 
 #google-logo {
     display:inline-block;
-    width: 372px;
+    width: 370px;
+    z-index: 0;
+    opacity: .91;
+}
+
+.main-container {
+    text-align: center;
+    position: relative;
+}
+
+.form-box {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 
+    0 0 0 1px rgba(0,0,0,0.08);
+    width: 584px;
+    height: 44px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 16.5em;
+    left: 27em;
+    font-size: medium;
+    padding-left: 16px;
+}
+
+.form-box:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 
+    0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#google-mic {
+    position: absolute;
+    bottom: 80px;
+    right: 445px;
+    height: 20px;
+}
+
+.buttons {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 9px 16px;
+    text-align: center;
+}
+
+.buttons:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #000;
+}
+
+.btn-one {
+    position: absolute;
+    left: 39.8%;
+    bottom: -8px;
+}
+
+.btn-two {
+    position: absolute;
+    right: 39.8%;
+    bottom: -8px;
+}
+
+/* #03. Footer */
+
+.footer-container {
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    line-height: 40px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-list li a {
+    padding-left: 27px;
+}
+
+.settings-pad {
+    padding-right: 27px;
+}
+
+.footer-right {
+    margin-left: auto;
 }
