@@ -2,7 +2,7 @@
 
 First project on **The Odin Project** where I have to recreate their landing page with the search button.
 And here's my attempt on creating this beauty of a search engine we all came to love -
-https://jl88s.github.io/google-homepage/
+https://lawsin-google-homepage.netlify.com/
 
 #### Getting Started
 

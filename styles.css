@@ -86,21 +86,24 @@ li a:hover {
 
 /* #02. Title / Search Bar */
 
-.google-logo-header {
-    display: inline-block;
-    text-indent: -9999999px;
-}
-
 #google-logo {
-    display:inline-block;
-    width: 370px;
+    display: block;
+    width: 280px;
     z-index: 0;
     opacity: .91;
+    margin-top: 10em;
 }
 
 .main-container {
-    text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .form-box {
@@ -111,23 +114,24 @@ li a:hover {
     border-radius: 2px;
     border: none;
     outline: none;
-    position: absolute;
-    top: 16.5em;
-    left: 27em;
-    font-size: medium;
-    padding-left: 16px;
+    margin-top: 27px;
+    font-size: 1.2em;
+    padding-left: 1.1em;
 }
 
 .form-box:hover {
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 
     0 0 0 1px rgba(0,0,0,0.08);
 }
-
+  
 #google-mic {
-    position: absolute;
-    bottom: 80px;
-    right: 445px;
     height: 20px;
+    margin-left: -33px;
+    margin-top: 27px;
+}
+
+.btn-row {
+    margin-top: 18px;
 }
 
 .buttons {
@@ -150,16 +154,16 @@ li a:hover {
     color: #000;
 }
 
-.btn-one {
-    position: absolute;
-    left: 39.8%;
-    bottom: -8px;
+.plug {
+    color: #1a0dab;
+    text-decoration: none;
+    font-family: arial,sans-serif;
+    display: block;
+    margin-top: 12px;
 }
 
-.btn-two {
-    position: absolute;
-    right: 39.8%;
-    bottom: -8px;
+.plug:hover {
+    color: #609;
 }
 
 /* #03. Footer */
